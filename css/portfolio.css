@@ -89,7 +89,7 @@ img {
 
 .btn:hover {
     cursor: pointer;
-    background-color: #3ae494;
+    background-color: #29e08b;
 }
 
 .skill_section-container {
@@ -100,7 +100,7 @@ img {
 
 .skill_section {
    width: 85%;
-   height: 400px;
+   height: auto;
    background-color: var(--cyber_yellow);
 }
 
@@ -119,7 +119,7 @@ h1.skill_h1 {
     letter-spacing: 5px;
     color: var(--crimson_red-accent);
     font-weight: bolder;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .skill_list {
@@ -152,6 +152,7 @@ h1.skill_h1 {
 
 
 .aboutme-container {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
@@ -160,7 +161,6 @@ h1.skill_h1 {
     width: 800px;
     height: 600px;
     background-color: var(--cyber_yellow);
-    border-radius: 5%;
     overflow-y: hidden
 }
 
