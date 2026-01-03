@@ -11,10 +11,43 @@ body {
 }
 
 :root {
-    --bg_color: #1B1F3B;
+    --bg_color: #c2e2d3;
     --crimson_red-accent: #fd4061;
     --green_accent: #58c592;
     --cyber_yellow:#ffd700;
+}
+
+.nav_bar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--green_accent);    
+    z-index: 1000;
+}
+
+.nav_bar-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.nav_logo img {
+    height: 50px;
+    width: 100px;
+}
+
+.nav_links {
+    display: flex;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+.nav_links li a {
+    color: white;
+    font-family: 'roboto', sans-serif;
+    text-decoration: none;
+    margin-left: 20px;
 }
 
 .hero_section {
@@ -141,7 +174,7 @@ h1.skill_h1 {
 
 
 .aboutme_h1{
-  margin-top: 20px;
+  margin-bottom: 10px;
   text-align: center;
   color: var(--crimson_red-accent);
   font-family: oswald;
@@ -159,7 +192,7 @@ h1.skill_h1 {
 
 .aboutme-content {
     width: 800px;
-    height: 600px;
+    height: auto;
     background-color: var(--cyber_yellow);
     overflow-y: hidden
 }
