@@ -18,6 +18,7 @@ body {
 }
 
 .nav_bar-container {
+    opacity: 80%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -32,6 +33,7 @@ body {
     padding: 20px 40px;
 }
 
+
 .nav_logo img {
     height: 50px;
     width: 100px;
@@ -41,13 +43,19 @@ body {
     display: flex;
     list-style-type: none;
     font-weight: 500;
+    cursor: pointer;
 }
+
 
 .nav_links li a {
     color: white;
     font-family: 'roboto', sans-serif;
     text-decoration: none;
     margin-left: 20px;
+}
+
+.nav_links li :hover {
+    color: var(--crimson_red-accent)
 }
 
 .hero_section {
@@ -103,21 +111,21 @@ img {
     position: absolute;
     top: 520px;
     left: 275px;
-    
-
-
 }
 
 .btn {
     background-color: var(--green_accent);
     height: 100px;
     width: 200px;
-    font-family: 'roboto' sans-serif;
+    font-family: roboto, sans-serif;
     font-size: 12px;
     border-radius: 50%;
     color: #050505;
     text-transform: uppercase;
     text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 3px;
 }
 
 .btn:hover {
