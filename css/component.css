@@ -1,0 +1,150 @@
+.section {
+    padding: 7.2rem 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 6.4rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid {
+    gap: 3.2rem;
+}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.body-text {
+    color: var(--charcol-black);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1.5rem 3.0rem;
+    background-color: var(--warm-terracotta);
+    border-radius: 120rem;
+    color: var(--soft-cream);
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: ease-in .3s;
+}
+
+.btn:hover {
+    color: #ffff;
+    background-color: var(--deep-crimson-red);
+}
+
+.card {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 50%;
+    height:70rem;
+    background-color: #fffdf9;
+    overflow: hidden;
+    border-radius: 11px;
+    box-shadow: 0 1.5rem 3.0rem rgba(0, 0, 0, 0.4);
+    transition: all .4s;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+    cursor: pointer;
+}
+
+/*===Tablet (landscape / small laptop)===*/
+@media (max-width: 1024px) {
+    .section {
+        padding: 6rem 0;
+    }
+
+    .container {
+        padding: 0 4rem;
+    }
+
+    .grid-2col {
+        gap: 2.4rem;
+    }
+
+    .card {
+        width: min(72vw, 52rem);
+        height: auto;
+        min-height: 58rem;
+    }
+}
+
+/*===Tablet (portrait) & large phones===*/
+@media (max-width: 768px) {
+    .section {
+        padding: 5rem 0;
+    }
+
+    .container {
+        padding: 0 2.4rem;
+    }
+
+    .grid-2col,
+    .grid-3col {
+        grid-template-columns: 1fr;
+    }
+
+    .body-text {
+        font-size: 1.5rem;
+        line-height: 1.7;
+    }
+
+    .btn {
+        margin: 0.8rem 0.8rem 0.8rem 0;
+        padding: 1.4rem 2.4rem;
+    }
+
+    .card {
+        width: min(88vw, 40rem);
+        min-height: 0;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}
+
+/*===Phones===*/
+@media (max-width: 480px) {
+    .section {
+        padding: 4rem 0;
+    }
+
+    .container {
+        padding: 0 1.6rem;
+    }
+
+    .grid {
+        gap: 2rem;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0.8rem 0;
+    }
+}
