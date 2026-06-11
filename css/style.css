@@ -397,6 +397,7 @@ p {
     flex-wrap: wrap;
     gap: 1.6rem;
     align-items: center;
+    justify-content: center;
 }
 
 .email-btn {
@@ -719,7 +720,7 @@ p {
 
     .contact__cta-buttons {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
 
     .email-btn {
