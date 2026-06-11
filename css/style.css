@@ -292,6 +292,7 @@ p {
 }
 
 .aboutMe__section-content {
+    gap: 2.5rem;
     margin-top: 2rem;
     background-color: var(--card-bg);
     padding: 3.2rem;
