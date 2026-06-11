@@ -55,10 +55,8 @@ img {
 }
 
 .card {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 50%;
-    height:70rem;
+    width: 100%;
+    height: auto;
     background-color: #fffdf9;
     overflow: hidden;
     border-radius: 11px;
@@ -83,12 +81,6 @@ img {
 
     .grid-2col {
         gap: 2.4rem;
-    }
-
-    .card {
-        width: min(72vw, 52rem);
-        height: auto;
-        min-height: 58rem;
     }
 }
 
@@ -115,11 +107,6 @@ img {
     .btn {
         margin: 0.8rem 0.8rem 0.8rem 0;
         padding: 1.4rem 2.4rem;
-    }
-
-    .card {
-        width: min(88vw, 40rem);
-        min-height: 0;
     }
 
     .card:hover {
