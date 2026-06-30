@@ -281,8 +281,43 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 1rem;
+}
+
+.card-img--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 18rem;
+    background: linear-gradient(135deg, var(--border-color), var(--card-bg));
+    border-radius: 11px;
+    color: var(--muted-brown-gray);
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.card_link-btn--disabled {
+    opacity: 0.75;
+    cursor: default;
+    pointer-events: none;
+}
+
+.technology-tag {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--charcol-black);
+    background-color: var(--soft-cream);
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    padding: 0.6rem 1.2rem;
+}
+
+.skill__card-icons li span:only-child {
+    margin-left: 0;
 }
 
 /*===About Section===*/
